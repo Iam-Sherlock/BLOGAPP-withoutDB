@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hi Dude....</h1>
+    <% if (locals.BlogTitle) { %>
+        <% for (i=0; i<=locals.BlogTitle.length;i++){ %>
+            <h1><%= BlogTitle[i] %></h1>
+            <p><%= Blog[i] %></p>
+            <% } %>
+    <% }else{ %>
+        <form action = "/submit" method="POST">
+            <input type="text" name="NewTitle" placeholder="Title">
+            <input typr="text" name="NewContent" placeholder="Content">
+            <input type="submit" value="Add">
+        </form>
+    <% } %>
+
+</body>
+</html>
