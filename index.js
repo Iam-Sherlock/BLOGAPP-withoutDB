@@ -14,6 +14,10 @@ app.get("/", (req, res) => {
     res.render("index.ejs")
 })
 
+app.get("/creater",(req,res)=>{
+    res.render("profile.ejs")
+})
+
 app.post("/submit", (req, res) => {
     let postHead = req.body['NewTitle'];
     let postCont = req.body['NewContent'];
