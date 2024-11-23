@@ -67,6 +67,10 @@ newCon[1] = "In the annals of technological history, few companies have made as 
 
 newHead[1] = "The Rise of Apple: A Journey from Garage to Global Domination"
 
+newCon[2] = "Why? Seriously, Why? Okay, fine. If you really must clone this repository, here's a step-by-step guide. But remember, you're wasting your precious time on something that's probably as useful as a chocolate teapot. Step 1: Open Your Terminal (Or Whatever You Call It) You know, that black screen thing that only real programmers use. If you don't know what that is, maybe you should stick to knitting or something. Step 2: Navigate to Your Desired Directory Yes, you have to navigate. Like a lost puppy. Good luck with that. Step 3: Clone the Repository Now, for the grand finale: Bash git clone https://github.com/totally-useless-repo/useless-code.git Use code with caution. But seriously, why? Why would you subject yourself to this digital torture? Pro Tip: If you accidentally clone this repo, the best course of action is to immediately delete it and pretend it never happened."
+
+newHead[2] = "How to Clone This Totally Useless Repository"
+
 function fiftyCon(lst) {
     return lst.substring(0, 100);
 }
