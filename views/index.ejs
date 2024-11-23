@@ -1,23 +1,26 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Hi Dude....</h1>
-    <% if (locals.BlogTitle) { %>
+<%- include("header.ejs") %>
+    <h1 class="display-1">Discover the Latest in Tech Innovation and Design</h1>
+    <button type="button" class="btn custom-btn btn-lg">
+        <a href ="/add">New Blog</a></button>
+    <button type="button" class="btn custom-btn btn-lg">
+        <a href ="/blog">View Blog</a></button>
+    <!-- <% if (locals.BlogTitle) { %>
+        <table>
         <% for (i=0; i<=locals.BlogTitle.length;i++){ %>
-            <h1><%= BlogTitle[i] %></h1>
-            <p><%= Blog[i] %></p>
-            <% } %>
+            <tr>
+                <th><h1><%= BlogTitle[i] %></h1></th>
+            </tr>
+            <tr>
+                <td><p><%= Blog[i] %></p></td>
+                <% } %>
+            </tr>
+        </table>
     <% }else{ %>
         <form action = "/submit" method="POST">
             <input type="text" name="NewTitle" placeholder="Title">
             <input typr="text" name="NewContent" placeholder="Content">
             <input type="submit" value="Add">
         </form>
-    <% } %>
-
-</body>
+    <% } %> -->
+  </body>
 </html>

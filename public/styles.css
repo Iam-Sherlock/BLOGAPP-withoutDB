@@ -1,0 +1,62 @@
+body{
+    background-color: #EBF9FE;
+}
+.display-1{
+    font-size: 100px;
+}
+
+.navbar a {
+    color: #10385C;
+    font-size: 40px;
+    font-weight: 500;
+    
+    /* float: right;
+    text-align: center;
+    padding: 12px;
+    
+    text-decoration: none;
+     */
+  }
+
+.blog-dtl-pg h1{
+    color: #10385C;
+    font-size:5rem;
+    padding-left: 4rem;
+    padding-top: 2rem;
+}
+
+.blog-dtl-pg p{
+    color: #073944;
+    font-size:2rem;
+    padding: 4rem;
+    text-align: justify;
+}
+
+.custom-btn{
+    background-color: #2B68A0;
+    padding: 5rem;
+    margin: 5%;
+}
+
+.custom-btn a{
+    color: #EBF9FE;
+    text-decoration:none ;
+    font-size: 5rem;
+}
+
+.bg-view-pg h1{
+    font-size: 5rem;
+    color:#073944;
+}
+
+.card-text{
+    font-size: large;
+}
+
+.card-body a{
+    text-decoration: none;
+}
+
+.card-title{
+    font-size: 1.7rem;
+}

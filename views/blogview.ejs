@@ -1,0 +1,20 @@
+<%- include("header.ejs") %>
+
+    <span class="bg-view-pg">
+    <h1>Discover the Latest in Tech Innovation and Design</h1>
+</span>
+        <div class="d-flex flex-row mb-3">
+        <% for (i=1; i<=Object.keys(BlogTitle).length;i++){ %>
+        <div class="p-2">
+        <div class="card bg-light mb-3" style="max-width: 25rem; max-height: 25rem; margin: 2rem;">
+            <div class="card-header" style="background-color: #2B68A0;">Blog</div>
+            <div class="card-body" style="background-color: #EBF9FE;">
+              <h5 class="card-title"><%= BlogTitle[i] %></h5>
+              <a href="/blogs/<%= i %>"><p class="card-text"><%= Blog[i].substring(0,100) %></p></a>
+            </div>
+        </div>
+        </div>
+        <% } %>
+    </div>
+</body>
+</html>
