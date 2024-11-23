@@ -101,11 +101,17 @@ body{
     animation: smooth-shake 10s ease-in-out infinite; 
     display: inline-block; 
 } */
-.profile-img{
+.profile-img {
     animation: smooth-shake 10s ease-in-out infinite;
-    text-align: center;
+    display:flex; /* Enable flexbox */
+    justify-content: center; /*Center horizontally*/
+    align-items: center;
+    height: 40vh; /*Full viewport height to vertically center*/
+    margin: 50px;
 }
+
 .profile-img img {
+    width: 100px;
     display: inline-block; /* Ensure it's treated as an inline-block element */
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation for hover */
     object-fit: cover;
@@ -113,7 +119,7 @@ body{
 }
 
 .profile-img img:hover {
-    transform: scale(1.05); /* Enlarge the image */
+    transform: scale(1.5); /* Enlarge the image */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow */
 }
 
