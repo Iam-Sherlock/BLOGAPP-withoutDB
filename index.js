@@ -71,6 +71,7 @@ app.post("/editSubmit",(req,res)=>{
 
 app.listen(3000, () => {
     console.log("Server is Running in port 3000")
+    console.log("http://localhost:3000")
 })
 
 // let newCon = ["In the annals of technological history, few companies have made as profound an impact as Apple Inc. From its humble beginnings in a California garage to its status as one of the world’s most valuable and influential tech giants, Apple’s rise is a story of innovation, design excellence, and unwavering determination. In this blog, we’ll trace the remarkable journey of Apple, examining key milestones, visionary leaders, and the products that forever changed the way we live, work, and connect.The Genesis: A Garage in Cupertino Apple’s origin story is a legendary tale in the tech world. It all began in the garage of Steve Jobs’ parents’ home in Cupertino, California, in 1976. Steve Jobs, Steve Wozniak, and Ronald Wayne founded the company, initially named Apple Computer, Inc. Their mission was to bring personal computing to the masses.In 1977, Apple introduced its first product, the Apple II. It was a game-changer, featuring color graphics and a keyboard — a far cry from the monochrome text-based computers of the era. The Apple II quickly became a success in homes and schools, paving the way for the company’s future innovations.","two based computers of the era. The Apple II quickly  initially "];

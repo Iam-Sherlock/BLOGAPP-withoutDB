@@ -23,13 +23,15 @@ body{
 }
 
 .container-fluid li :hover{
-    background-color: aquamarine;
-    transform: scale(0.5);
+    background-color:#9ee1fa;
+    border-radius: 8px;
+    transform: scale(1.1);
 }
 
 .blog-home-pg h1{
     font-size: 5rem;
     color:#073944;
+    padding-left: 3rem;
 }
 
 .blog-dtl-pg h1{
@@ -58,7 +60,7 @@ body{
 }
 
 .custom-btn a{
-    color: #EBF9FE;
+    color:#10385C;
     text-decoration:none ;
     font-size: 5rem;
 }
@@ -91,6 +93,14 @@ body{
     color: #073944;
     font-size:5rem;
     padding: 2rem;
+    text-align: center;
+}
+
+.addblg-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .form-outline label{

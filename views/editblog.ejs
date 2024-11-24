@@ -1,20 +1,23 @@
 <%- include("header.ejs") %>
+<h1 class="addBlg-header">Edit Your Blog</h1>
+    <div class="addblg-content">
     <form action="/editSubmit" method="POST">
         <div data-mdb-input-init class="form-outline mb-4"
-            style="padding: 2rem; padding-right: 50%;padding-bottom: 0%;">
+            style="width: 100vh; font-weight: 400;">
             <label for="editHead">Title:</label>
             <input type="text" class="form-control" value="<%= SelectedTitle %>" name="editHead" maxlength="100">
             <!-- <input type="text" id="NewTitle" name="NewTitle" placeholder="Title" class="form-control" maxlength="100"> -->
             <small>Max 100 characters</small>
         </div>
 
-        <div data-mdb-input-init class="form-outline mb-4" style="padding: 2rem; padding-right: 50%;">
+        <div data-mdb-input-init class="form-outline mb-4" style="width: 100vh; font-weight: 400;">
             <label for="editCon">Content:</label>
             <textarea class="form-control" name="editCon" rows="8"><%= SelectedCon %></textarea>
         </div>
         <input type="hidden" name="id" value="<%= id  %>">
-        <div class="text-center mb-4" style="padding: 2rem; padding-right: 50%; padding-top: 0%;">
+        <div class="text-center mb-4" style="width: 100vh;">
             <input type="submit" value="Add" class="btn btn-primary btn-lg"
                 style="padding: 2%; padding-left: 5%; padding-right: 5%; font-size: 2rem;">
         </div>
     </form>
+</div>
