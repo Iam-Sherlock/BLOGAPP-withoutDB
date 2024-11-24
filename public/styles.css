@@ -18,6 +18,15 @@ body{
      */
   }
 
+.container-fluid li{
+    padding-right: 2rem;
+}
+
+.container-fluid li :hover{
+    background-color: aquamarine;
+    transform: scale(0.5);
+}
+
 .blog-home-pg h1{
     font-size: 5rem;
     color:#073944;
@@ -28,6 +37,7 @@ body{
     font-size:5rem;
     padding-left: 4rem;
     padding-top: 2rem;
+    padding-right: 4rem;
 }
 
 .blog-dtl-pg p{
@@ -35,6 +45,10 @@ body{
     font-size:2rem;
     padding: 4rem;
     text-align: justify;
+}
+
+.blg-dtl-btn{
+    padding: 4rem;
 }
 
 .custom-btn{

@@ -37,7 +37,7 @@ app.get("/blogs/:id", (req, res) => {
     // console.log(newHead[id])
     const SelectedCon = newCon[id]
     // console.log(SelectedCon1)
-    res.render("BlogDetails.ejs",{SelectedTitle,SelectedCon})
+    res.render("BlogDetails.ejs",{SelectedTitle,SelectedCon,id})
 })
 
 app.get("/blog", (req, res) => {
@@ -52,6 +52,22 @@ app.get("/blog", (req, res) => {
     let BlogTitle = newHead
     res.render("blogview.ejs", { Blog, BlogTitle })
 })
+
+app.get("/editblog/:id",(req,res)=>{
+    const id = req.params.id;
+    const SelectedTitle = newHead[id]
+    const SelectedCon = newCon[id]
+    res.render("editblog.ejs",{SelectedTitle,SelectedCon,id})
+})
+
+app.post("/editSubmit",(req,res)=>{
+    console.log("Head is .../n",req.body['editHead'],"Con is ..../n",req.body['editCon'],"id num is..../n",req.body['id'])
+    const id = req.body['id'];
+    newHead[id] = req.body['editHead']
+    newCon[id]=req.body['editCon']
+    res.redirect("/blogs/"+id)
+})
+
 
 app.listen(3000, () => {
     console.log("Server is Running in port 3000")
